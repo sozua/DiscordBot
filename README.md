@@ -8,7 +8,7 @@
 Siga o passo a passo e coloque a sua versão desse bot para funcionar também 😉.
 
 1. Baixe esse projeto para o seu computador  
-`git clone https://github.com/sozua/discordbot SozuaBot`
+`git clone https://github.com/sozua/DiscordBot.git SozuaBot`
 2. Acesse a pasta do projeto e altere o arquivo '.env.example' para '.env'
 3. Crie um bot no [painel do discord](https://discord.com/developers/applications)
 4. Altere todas os valores das chaves para as dos seu Bot.
