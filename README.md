@@ -3,19 +3,21 @@
 **Tipo de bot:** Auxiliar  
 **Prefixo:** "!s (comando)"
 
-# 🚀 Como instalar
+# 🤔 Como adicionar o bot no seu servidor
+
+Para adicionar esse bot no seu servidor é bem simples, basta acessar [essa URL](https://discordapp.com/oauth2/authorize?=&client_id=723372497113841695&scope=bot&permissions=183360) e escolher os servidores que você deseja adicionar!
+
+# 🚀 Como criar sua própia versão desse Bot
 
 Siga o passo a passo e coloque a sua versão desse bot para funcionar também 😉.
 
-1. Baixe esse projeto para o seu computador  
-`git clone https://github.com/sozua/DiscordBot.git SozuaBot`
+1. Baixe esse projeto para o seu computador `git clone https://github.com/sozua/DiscordBot.git SozuaBot`
 2. Acesse a pasta do projeto e altere o arquivo '.env.example' para '.env'
 3. Crie um bot no [painel do discord](https://discord.com/developers/applications)
 4. Altere todas os valores das chaves para as dos seu Bot.
-5. Crie o link de convite do seu Bot  
-`https://discordapp.com/oauth2/authorize?=&client_id=(Id de cliente do bot)&scope=bot&permissions=(Nivel de permissão do bot, recomendo usar: 183360)`
-6. Dê start no bot e se divirta.  
-`npm start`
+5. Crie o link de convite do seu Bot `https://discordapp.com/oauth2/authorize?=&client_id=(Id de cliente do bot)&scope=bot&permissions=(Nivel de permissão do bot, recomendo usar: 183360)`
+6. Personalize o bot do seu jeito no arquivo de [configurações gerais](./config.json)
+7. Dê start no bot e se divirta 🥳. `npm start`
 
 # Comandos:
 
@@ -29,7 +31,7 @@ Passo a passo de como criar:
 2. Preencha os campos de textos necessários
 3. Se divirta com o seu novo meme 🥳🎉
 
-### 📦 !s rastreio
+### 📦 !s rastreio (código)
 
 Com esse comando você consegue rastrear facilmente qualquer encomenda entregue pelos correios. 🚶
 
