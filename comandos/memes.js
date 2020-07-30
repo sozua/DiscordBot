@@ -23,7 +23,7 @@ module.exports = {
     const embed = await new Discord.MessageEmbed()
       .setTitle("Lista de memes:")
       .setDescription(
-        `Digite ${config.prefix}meme [ID] [Campos de texto]. Ex: "${config.prefix}meme 181913649 Texto1 Texto2"`
+        `Digite ${config.prefix}meme [ID] [Campos de texto]. Ex: "${config.prefix}meme 181913649 Texto 1, Texto 2 \n (Utilize a virgula para separar os textos)`
       )
       .setColor("#0099ff")
       .setURL(getMemes);

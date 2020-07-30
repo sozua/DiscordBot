@@ -28,14 +28,28 @@ module.exports = {
     try {
       const mensagem = Array.from(message.content.split(" "));
       const id = mensagem[2];
-      const boxes = Array.from(mensagem.slice(3));
-      const { data } = await getImage(id, boxes);
-      const embed = await new Discord.MessageEmbed()
-        .setTitle("Meme criado com sucesso! =D")
-        .setColor("#0099ff")
-        .setURL(data.url)
-        .setImage(data.url);
-      sentMessage.edit(config.messages.finishedMessage, embed);
+      // Dividi as mensagens longas em 2 e remove o "!s meme [id]" da primeira parte da string
+      const longBoxes = Array.from(
+        message.content.split(" ").slice(3).join(" ").split(",")
+      );
+      if (longBoxes) {
+        const { data } = await getImage(id, longBoxes);
+        const embed = await new Discord.MessageEmbed()
+          .setTitle("Meme criado com sucesso! =D")
+          .setColor("#0099ff")
+          .setURL(data.url)
+          .setImage(data.url);
+        sentMessage.edit(config.messages.finishedMessage, embed);
+      } else {
+        const boxes = Array.from(mensagem.slice(3));
+        const { data } = await getImage(id, boxes);
+        const embed = await new Discord.MessageEmbed()
+          .setTitle("Meme criado com sucesso! =D")
+          .setColor("#0099ff")
+          .setURL(data.url)
+          .setImage(data.url);
+        sentMessage.edit(config.messages.finishedMessage, embed);
+      }
     } catch {
       sentMessage.edit(config.messages.errorMessage);
     }
