@@ -5,7 +5,7 @@
 
 # 🤔 Como adicionar o bot no seu servidor
 
-Para adicionar esse bot no seu servidor é bem simples, basta acessar [essa URL](https://discordapp.com/oauth2/authorize?=&client_id=723372497113841695&scope=bot&permissions=183360) e escolher os servidores que você deseja adicionar!
+Atualmente, o bot está fora do ar e não tem expectativa de retorno 😔.
 
 # 🚀 Como criar sua própia versão desse Bot
 
